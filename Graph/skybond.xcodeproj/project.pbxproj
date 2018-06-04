@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A200EE1C1BA97E0490301F9 /* Pods_skybond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6881AE95D58EF9CC52ADEA08 /* Pods_skybond.framework */; };
+		C73C55245FC28B794E589E69 /* Pods_skybondTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1163916380ECBE67365315CF /* Pods_skybondTests.framework */; };
+		F608344C20C3D92B001676D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F608344220C3D92B001676D1 /* Assets.xcassets */; };
+		F608344D20C3D92B001676D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F608344320C3D92B001676D1 /* LaunchScreen.storyboard */; };
+		F608344E20C3D92B001676D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F608344520C3D92B001676D1 /* Main.storyboard */; };
+		F608344F20C3D92B001676D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608344920C3D92B001676D1 /* AppDelegate.swift */; };
+		F608345720C3D969001676D1 /* GraphModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608345120C3D969001676D1 /* GraphModulePresenter.swift */; };
+		F608345820C3D969001676D1 /* GraphModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608345220C3D969001676D1 /* GraphModuleAssembly.swift */; };
+		F608345920C3D969001676D1 /* GraphModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608345320C3D969001676D1 /* GraphModuleView.swift */; };
+		F608345C20C3D969001676D1 /* GraphModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608345620C3D969001676D1 /* GraphModuleInteractor.swift */; };
+		F608345E20C3D9CB001676D1 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608345D20C3D9CB001676D1 /* GraphView.swift */; };
+		F608346020C3DDD8001676D1 /* ParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608345F20C3DDD8001676D1 /* ParameterView.swift */; };
+		F608346220C3DDE6001676D1 /* ParameterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F608346120C3DDE6001676D1 /* ParameterView.xib */; };
+		F608346720C3EB39001676D1 /* UIView+NibLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608346620C3EB39001676D1 /* UIView+NibLoad.swift */; };
+		F608346920C3F16B001676D1 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608346820C3F16B001676D1 /* Assembly.swift */; };
+		F608347320C3F23A001676D1 /* UIApplication+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608346B20C3F23A001676D1 /* UIApplication+Swizzling.swift */; };
+		F608347420C3F23A001676D1 /* ViperModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608346D20C3F23A001676D1 /* ViperModuleOutput.swift */; };
+		F608347520C3F23A001676D1 /* UIViewController+ViperModuleTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608346E20C3F23A001676D1 /* UIViewController+ViperModuleTransitionHandler.swift */; };
+		F608347620C3F23A001676D1 /* ViperModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608346F20C3F23A001676D1 /* ViperModuleInput.swift */; };
+		F608347720C3F23A001676D1 /* ViperOpenModulePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608347020C3F23A001676D1 /* ViperOpenModulePromise.swift */; };
+		F608347820C3F23A001676D1 /* ViperModuleTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608347120C3F23A001676D1 /* ViperModuleTransitionHandler.swift */; };
+		F608347920C3F23A001676D1 /* ViperModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608347220C3F23A001676D1 /* ViperModuleFactory.swift */; };
+		F608347B20C4174A001676D1 /* TickGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608347A20C4174A001676D1 /* TickGenerator.swift */; };
+		F608347F20C41B6A001676D1 /* GraphModuleInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608347E20C41B6A001676D1 /* GraphModuleInteractorSpec.swift */; };
+		F608348120C41D53001676D1 /* PeriodFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608348020C41D53001676D1 /* PeriodFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F608343320C3D7B8001676D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F608341620C3D7B5001676D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F608341D20C3D7B5001676D1;
+			remoteInfo = skybond;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1163916380ECBE67365315CF /* Pods_skybondTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skybondTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		438DC4C20452FC6458FB0EC5 /* Pods-skybond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skybond.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skybond/Pods-skybond.debug.xcconfig"; sourceTree = "<group>"; };
+		6881AE95D58EF9CC52ADEA08 /* Pods_skybond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skybond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2A8EE69CDBBC394F0EE2CC /* Pods-skybondTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skybondTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skybondTests/Pods-skybondTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B52658971CF5750A0D9D8662 /* Pods-skybondTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skybondTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-skybondTests/Pods-skybondTests.release.xcconfig"; sourceTree = "<group>"; };
+		D90DD5CAAF4F2B759F1007C6 /* Pods-skybond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skybond.release.xcconfig"; path = "Pods/Target Support Files/Pods-skybond/Pods-skybond.release.xcconfig"; sourceTree = "<group>"; };
+		F608341E20C3D7B5001676D1 /* skybond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skybond.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F608342D20C3D7B8001676D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F608343220C3D7B8001676D1 /* skybondTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skybondTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F608343820C3D7B8001676D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F608344220C3D92B001676D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F608344420C3D92B001676D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F608344620C3D92B001676D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F608344920C3D92B001676D1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F608345120C3D969001676D1 /* GraphModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModulePresenter.swift; sourceTree = "<group>"; };
+		F608345220C3D969001676D1 /* GraphModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModuleAssembly.swift; sourceTree = "<group>"; };
+		F608345320C3D969001676D1 /* GraphModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModuleView.swift; sourceTree = "<group>"; };
+		F608345620C3D969001676D1 /* GraphModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModuleInteractor.swift; sourceTree = "<group>"; };
+		F608345D20C3D9CB001676D1 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		F608345F20C3DDD8001676D1 /* ParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterView.swift; sourceTree = "<group>"; };
+		F608346120C3DDE6001676D1 /* ParameterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParameterView.xib; sourceTree = "<group>"; };
+		F608346620C3EB39001676D1 /* UIView+NibLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoad.swift"; sourceTree = "<group>"; };
+		F608346820C3F16B001676D1 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		F608346B20C3F23A001676D1 /* UIApplication+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Swizzling.swift"; sourceTree = "<group>"; };
+		F608346D20C3F23A001676D1 /* ViperModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleOutput.swift; sourceTree = "<group>"; };
+		F608346E20C3F23A001676D1 /* UIViewController+ViperModuleTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ViperModuleTransitionHandler.swift"; sourceTree = "<group>"; };
+		F608346F20C3F23A001676D1 /* ViperModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleInput.swift; sourceTree = "<group>"; };
+		F608347020C3F23A001676D1 /* ViperOpenModulePromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperOpenModulePromise.swift; sourceTree = "<group>"; };
+		F608347120C3F23A001676D1 /* ViperModuleTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleTransitionHandler.swift; sourceTree = "<group>"; };
+		F608347220C3F23A001676D1 /* ViperModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleFactory.swift; sourceTree = "<group>"; };
+		F608347A20C4174A001676D1 /* TickGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickGenerator.swift; sourceTree = "<group>"; };
+		F608347E20C41B6A001676D1 /* GraphModuleInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModuleInteractorSpec.swift; sourceTree = "<group>"; };
+		F608348020C41D53001676D1 /* PeriodFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodFormatter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F608341B20C3D7B5001676D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A200EE1C1BA97E0490301F9 /* Pods_skybond.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F608342F20C3D7B8001676D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73C55245FC28B794E589E69 /* Pods_skybondTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D20CB25164E7ACEF93675FFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				438DC4C20452FC6458FB0EC5 /* Pods-skybond.debug.xcconfig */,
+				D90DD5CAAF4F2B759F1007C6 /* Pods-skybond.release.xcconfig */,
+				9D2A8EE69CDBBC394F0EE2CC /* Pods-skybondTests.debug.xcconfig */,
+				B52658971CF5750A0D9D8662 /* Pods-skybondTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E407E1F3CD9EDAE467656BA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6881AE95D58EF9CC52ADEA08 /* Pods_skybond.framework */,
+				1163916380ECBE67365315CF /* Pods_skybondTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F608341520C3D7B5001676D1 = {
+			isa = PBXGroup;
+			children = (
+				F608342020C3D7B5001676D1 /* skybond */,
+				F608343520C3D7B8001676D1 /* skybondTests */,
+				F608341F20C3D7B5001676D1 /* Products */,
+				D20CB25164E7ACEF93675FFF /* Pods */,
+				E407E1F3CD9EDAE467656BA7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F608341F20C3D7B5001676D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F608341E20C3D7B5001676D1 /* skybond.app */,
+				F608343220C3D7B8001676D1 /* skybondTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F608342020C3D7B5001676D1 /* skybond */ = {
+			isa = PBXGroup;
+			children = (
+				F608344820C3D92B001676D1 /* Application */,
+				F608346A20C3F23A001676D1 /* Core */,
+				F608344A20C3D92B001676D1 /* Controls */,
+				F608344B20C3D92B001676D1 /* Modules */,
+				F608344720C3D92B001676D1 /* Services */,
+				F608344120C3D92B001676D1 /* Resources */,
+				F608342D20C3D7B8001676D1 /* Info.plist */,
+			);
+			path = skybond;
+			sourceTree = "<group>";
+		};
+		F608343520C3D7B8001676D1 /* skybondTests */ = {
+			isa = PBXGroup;
+			children = (
+				F608348220C41DA8001676D1 /* Services */,
+				F608347C20C41B55001676D1 /* Modules */,
+				F608343820C3D7B8001676D1 /* Info.plist */,
+			);
+			path = skybondTests;
+			sourceTree = "<group>";
+		};
+		F608344120C3D92B001676D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F608344220C3D92B001676D1 /* Assets.xcassets */,
+				F608344320C3D92B001676D1 /* LaunchScreen.storyboard */,
+				F608344520C3D92B001676D1 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F608344720C3D92B001676D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F608347A20C4174A001676D1 /* TickGenerator.swift */,
+				F608348020C41D53001676D1 /* PeriodFormatter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F608344820C3D92B001676D1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F608346820C3F16B001676D1 /* Assembly.swift */,
+				F608344920C3D92B001676D1 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F608344A20C3D92B001676D1 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F608346520C3EB39001676D1 /* Extensions */,
+				F608345D20C3D9CB001676D1 /* GraphView.swift */,
+				F608345F20C3DDD8001676D1 /* ParameterView.swift */,
+				F608346120C3DDE6001676D1 /* ParameterView.xib */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		F608344B20C3D92B001676D1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F608345020C3D95D001676D1 /* Graph */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F608345020C3D95D001676D1 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				F608345220C3D969001676D1 /* GraphModuleAssembly.swift */,
+				F608345320C3D969001676D1 /* GraphModuleView.swift */,
+				F608345120C3D969001676D1 /* GraphModulePresenter.swift */,
+				F608345620C3D969001676D1 /* GraphModuleInteractor.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		F608346520C3EB39001676D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F608346620C3EB39001676D1 /* UIView+NibLoad.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F608346A20C3F23A001676D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F608346B20C3F23A001676D1 /* UIApplication+Swizzling.swift */,
+				F608346C20C3F23A001676D1 /* Viper */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F608346C20C3F23A001676D1 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				F608346D20C3F23A001676D1 /* ViperModuleOutput.swift */,
+				F608346E20C3F23A001676D1 /* UIViewController+ViperModuleTransitionHandler.swift */,
+				F608346F20C3F23A001676D1 /* ViperModuleInput.swift */,
+				F608347020C3F23A001676D1 /* ViperOpenModulePromise.swift */,
+				F608347120C3F23A001676D1 /* ViperModuleTransitionHandler.swift */,
+				F608347220C3F23A001676D1 /* ViperModuleFactory.swift */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		F608347C20C41B55001676D1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F608347D20C41B55001676D1 /* graph */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F608347D20C41B55001676D1 /* graph */ = {
+			isa = PBXGroup;
+			children = (
+				F608347E20C41B6A001676D1 /* GraphModuleInteractorSpec.swift */,
+			);
+			path = graph;
+			sourceTree = "<group>";
+		};
+		F608348220C41DA8001676D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F608341D20C3D7B5001676D1 /* skybond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F608343B20C3D7B8001676D1 /* Build configuration list for PBXNativeTarget "skybond" */;
+			buildPhases = (
+				808451290A55C4E1B5248461 /* [CP] Check Pods Manifest.lock */,
+				F608341A20C3D7B5001676D1 /* Sources */,
+				F608341B20C3D7B5001676D1 /* Frameworks */,
+				F608341C20C3D7B5001676D1 /* Resources */,
+				FE8AE3A54A05A1B7C9E6F20E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = skybond;
+			productName = skybond;
+			productReference = F608341E20C3D7B5001676D1 /* skybond.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F608343120C3D7B8001676D1 /* skybondTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F608343E20C3D7B8001676D1 /* Build configuration list for PBXNativeTarget "skybondTests" */;
+			buildPhases = (
+				F62212D5F51CF1FDC8CFCA7C /* [CP] Check Pods Manifest.lock */,
+				F608342E20C3D7B8001676D1 /* Sources */,
+				F608342F20C3D7B8001676D1 /* Frameworks */,
+				F608343020C3D7B8001676D1 /* Resources */,
+				3288E5FDB3D493C90A3616E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F608343420C3D7B8001676D1 /* PBXTargetDependency */,
+			);
+			name = skybondTests;
+			productName = skybondTests;
+			productReference = F608343220C3D7B8001676D1 /* skybondTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F608341620C3D7B5001676D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Daniyar Salakhutdinov";
+				TargetAttributes = {
+					F608341D20C3D7B5001676D1 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					F608343120C3D7B8001676D1 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+						TestTargetID = F608341D20C3D7B5001676D1;
+					};
+				};
+			};
+			buildConfigurationList = F608341920C3D7B5001676D1 /* Build configuration list for PBXProject "skybond" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F608341520C3D7B5001676D1;
+			productRefGroup = F608341F20C3D7B5001676D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F608341D20C3D7B5001676D1 /* skybond */,
+				F608343120C3D7B8001676D1 /* skybondTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F608341C20C3D7B5001676D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F608344E20C3D92B001676D1 /* Main.storyboard in Resources */,
+				F608344C20C3D92B001676D1 /* Assets.xcassets in Resources */,
+				F608346220C3DDE6001676D1 /* ParameterView.xib in Resources */,
+				F608344D20C3D92B001676D1 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F608343020C3D7B8001676D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3288E5FDB3D493C90A3616E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-skybondTests/Pods-skybondTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-skybondTests/Pods-skybondTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808451290A55C4E1B5248461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-skybond-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F62212D5F51CF1FDC8CFCA7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-skybondTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8AE3A54A05A1B7C9E6F20E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-skybond/Pods-skybond-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-skybond/Pods-skybond-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F608341A20C3D7B5001676D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F608347420C3F23A001676D1 /* ViperModuleOutput.swift in Sources */,
+				F608345820C3D969001676D1 /* GraphModuleAssembly.swift in Sources */,
+				F608344F20C3D92B001676D1 /* AppDelegate.swift in Sources */,
+				F608347320C3F23A001676D1 /* UIApplication+Swizzling.swift in Sources */,
+				F608345C20C3D969001676D1 /* GraphModuleInteractor.swift in Sources */,
+				F608347620C3F23A001676D1 /* ViperModuleInput.swift in Sources */,
+				F608347B20C4174A001676D1 /* TickGenerator.swift in Sources */,
+				F608348120C41D53001676D1 /* PeriodFormatter.swift in Sources */,
+				F608345720C3D969001676D1 /* GraphModulePresenter.swift in Sources */,
+				F608347920C3F23A001676D1 /* ViperModuleFactory.swift in Sources */,
+				F608346920C3F16B001676D1 /* Assembly.swift in Sources */,
+				F608346720C3EB39001676D1 /* UIView+NibLoad.swift in Sources */,
+				F608345920C3D969001676D1 /* GraphModuleView.swift in Sources */,
+				F608345E20C3D9CB001676D1 /* GraphView.swift in Sources */,
+				F608346020C3DDD8001676D1 /* ParameterView.swift in Sources */,
+				F608347720C3F23A001676D1 /* ViperOpenModulePromise.swift in Sources */,
+				F608347820C3F23A001676D1 /* ViperModuleTransitionHandler.swift in Sources */,
+				F608347520C3F23A001676D1 /* UIViewController+ViperModuleTransitionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F608342E20C3D7B8001676D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F608347F20C41B6A001676D1 /* GraphModuleInteractorSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F608343420C3D7B8001676D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F608341D20C3D7B5001676D1 /* skybond */;
+			targetProxy = F608343320C3D7B8001676D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F608344320C3D92B001676D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F608344420C3D92B001676D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F608344520C3D92B001676D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F608344620C3D92B001676D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F608343920C3D7B8001676D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F608343A20C3D7B8001676D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F608343C20C3D7B8001676D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438DC4C20452FC6458FB0EC5 /* Pods-skybond.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU7Q2XW89R;
+				INFOPLIST_FILE = skybond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daniyar.skybond-graph";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F608343D20C3D7B8001676D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90DD5CAAF4F2B759F1007C6 /* Pods-skybond.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU7Q2XW89R;
+				INFOPLIST_FILE = skybond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daniyar.skybond-graph";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F608343F20C3D7B8001676D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2A8EE69CDBBC394F0EE2CC /* Pods-skybondTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = skybondTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybonds.skybondTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skybond.app/skybond";
+			};
+			name = Debug;
+		};
+		F608344020C3D7B8001676D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52658971CF5750A0D9D8662 /* Pods-skybondTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = skybondTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybonds.skybondTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skybond.app/skybond";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F608341920C3D7B5001676D1 /* Build configuration list for PBXProject "skybond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F608343920C3D7B8001676D1 /* Debug */,
+				F608343A20C3D7B8001676D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F608343B20C3D7B8001676D1 /* Build configuration list for PBXNativeTarget "skybond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F608343C20C3D7B8001676D1 /* Debug */,
+				F608343D20C3D7B8001676D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F608343E20C3D7B8001676D1 /* Build configuration list for PBXNativeTarget "skybondTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F608343F20C3D7B8001676D1 /* Debug */,
+				F608344020C3D7B8001676D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F608341620C3D7B5001676D1 /* Project object */;
+}

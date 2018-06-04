@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Graph Module View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GraphModuleView" customModule="skybond" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Lm-tQ-gxO">
+                                <rect key="frame" x="0.0" y="122" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDt-Ff-eoF">
+                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="44"/>
+                                        <state key="normal" title="1W"/>
+                                        <connections>
+                                            <action selector="periodButtonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNq-Zq-sJ4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P5-eN-3AZ">
+                                        <rect key="frame" x="62.5" y="0.0" width="62.5" height="44"/>
+                                        <state key="normal" title="1M">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="periodButtonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fK9-t3-RZE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne2-pk-s7g">
+                                        <rect key="frame" x="125" y="0.0" width="62.5" height="44"/>
+                                        <state key="normal" title="3M">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="periodButtonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ge9-Is-NA0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cu4-D6-jwD">
+                                        <rect key="frame" x="187.5" y="0.0" width="62.5" height="44"/>
+                                        <state key="normal" title="6M">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="periodButtonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2mL-2U-gTJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaH-vH-WY9">
+                                        <rect key="frame" x="250" y="0.0" width="62.5" height="44"/>
+                                        <state key="normal" title="1Y">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="periodButtonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fH0-Bo-doU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlA-jH-mYt">
+                                        <rect key="frame" x="312.5" y="0.0" width="62.5" height="44"/>
+                                        <state key="normal" title="2Y">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="periodButtonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4c-uT-CL9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FaH-vH-WY9" secondAttribute="bottom" id="FH5-EA-q6d"/>
+                                    <constraint firstItem="0P5-eN-3AZ" firstAttribute="leading" secondItem="YDt-Ff-eoF" secondAttribute="trailing" id="JFl-Q3-6az"/>
+                                    <constraint firstItem="YDt-Ff-eoF" firstAttribute="top" secondItem="9Lm-tQ-gxO" secondAttribute="top" id="Jqf-gj-6r1"/>
+                                    <constraint firstItem="Ne2-pk-s7g" firstAttribute="leading" secondItem="0P5-eN-3AZ" secondAttribute="trailing" id="NGJ-87-anL"/>
+                                    <constraint firstAttribute="bottom" secondItem="0P5-eN-3AZ" secondAttribute="bottom" id="Q90-kX-fIm"/>
+                                    <constraint firstItem="Cu4-D6-jwD" firstAttribute="top" secondItem="9Lm-tQ-gxO" secondAttribute="top" id="Wch-8E-tXM"/>
+                                    <constraint firstItem="Ne2-pk-s7g" firstAttribute="width" secondItem="Cu4-D6-jwD" secondAttribute="width" id="YtV-yH-FVS"/>
+                                    <constraint firstItem="FaH-vH-WY9" firstAttribute="leading" secondItem="Cu4-D6-jwD" secondAttribute="trailing" id="aol-p1-cPA"/>
+                                    <constraint firstItem="RlA-jH-mYt" firstAttribute="top" secondItem="9Lm-tQ-gxO" secondAttribute="top" id="cvl-zb-Qad"/>
+                                    <constraint firstItem="0P5-eN-3AZ" firstAttribute="width" secondItem="Ne2-pk-s7g" secondAttribute="width" id="eZ4-FE-bJO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cu4-D6-jwD" secondAttribute="bottom" id="f2i-mL-ZWW"/>
+                                    <constraint firstAttribute="bottom" secondItem="YDt-Ff-eoF" secondAttribute="bottom" id="gw0-GB-fze"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ne2-pk-s7g" secondAttribute="bottom" id="hYJ-7A-iBG"/>
+                                    <constraint firstItem="Cu4-D6-jwD" firstAttribute="leading" secondItem="Ne2-pk-s7g" secondAttribute="trailing" id="lMx-nn-XqS"/>
+                                    <constraint firstItem="RlA-jH-mYt" firstAttribute="leading" secondItem="FaH-vH-WY9" secondAttribute="trailing" id="lhP-DZ-4CD"/>
+                                    <constraint firstItem="YDt-Ff-eoF" firstAttribute="leading" secondItem="9Lm-tQ-gxO" secondAttribute="leading" id="o1X-CM-PLy"/>
+                                    <constraint firstAttribute="trailing" secondItem="RlA-jH-mYt" secondAttribute="trailing" id="r1k-kh-UjP"/>
+                                    <constraint firstItem="Ne2-pk-s7g" firstAttribute="top" secondItem="9Lm-tQ-gxO" secondAttribute="top" id="rFA-iq-f4r"/>
+                                    <constraint firstItem="FaH-vH-WY9" firstAttribute="width" secondItem="RlA-jH-mYt" secondAttribute="width" id="t61-nz-dmD"/>
+                                    <constraint firstAttribute="bottom" secondItem="RlA-jH-mYt" secondAttribute="bottom" id="tZG-Gj-zfl"/>
+                                    <constraint firstItem="0P5-eN-3AZ" firstAttribute="top" secondItem="9Lm-tQ-gxO" secondAttribute="top" id="uXy-Qw-yjp"/>
+                                    <constraint firstItem="FaH-vH-WY9" firstAttribute="top" secondItem="9Lm-tQ-gxO" secondAttribute="top" id="vZp-fJ-wPX"/>
+                                    <constraint firstItem="Cu4-D6-jwD" firstAttribute="width" secondItem="FaH-vH-WY9" secondAttribute="width" id="x2N-jT-m8A"/>
+                                    <constraint firstAttribute="height" constant="44" id="yaD-JS-GIe"/>
+                                    <constraint firstItem="YDt-Ff-eoF" firstAttribute="width" secondItem="0P5-eN-3AZ" secondAttribute="width" id="yjm-qZ-9fU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Lm-tQ-gxO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="D8N-3E-Qj3"/>
+                            <constraint firstItem="9Lm-tQ-gxO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FRg-X7-fOP"/>
+                            <constraint firstItem="9Lm-tQ-gxO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" placeholder="YES" id="KpM-J2-SSj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonsPanel" destination="9Lm-tQ-gxO" id="QvS-Ce-pEB"/>
+                        <outlet property="monthButton" destination="0P5-eN-3AZ" id="cej-co-pjU"/>
+                        <outlet property="sixMonthsButton" destination="Cu4-D6-jwD" id="FJf-HE-v13"/>
+                        <outlet property="threeMonthsButton" destination="Ne2-pk-s7g" id="ORf-ng-Ptc"/>
+                        <outlet property="twoYearsButton" destination="RlA-jH-mYt" id="3H6-TU-KUn"/>
+                        <outlet property="weekButton" destination="YDt-Ff-eoF" id="uxW-6Z-hlb"/>
+                        <outlet property="yearButton" destination="FaH-vH-WY9" id="0Fs-Xn-fl2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
